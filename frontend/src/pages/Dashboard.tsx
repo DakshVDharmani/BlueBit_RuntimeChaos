@@ -279,11 +279,11 @@ export const Dashboard = () => {
       try {
         const fd = new FormData();
         fd.append('file', uploadedFile);
-        const res = await fetch('http://localhost:3001/api/detect-deepfake', { method: 'POST', body: fd });
+        const res = await fetch('http://localhost:8001/api/detect-deepfake', { method: 'POST', body: fd });
         const data = await res.json();
         setAiResult(data);
       } catch (e) {
-        setAiResult({ error: 'AI analysis call failed. Ensure backend is running on port 3001.' });
+        setAiResult({ error: 'AI analysis call failed. Ensure backend is running on port 8001.' });
       } finally {
         setAiAnalysisLoading(false);
       }
@@ -293,7 +293,7 @@ export const Dashboard = () => {
       try {
         const fd = new FormData();
         fd.append('file', uploadedFile);
-        const res = await fetch('http://localhost:3001/api/detect-deepfake-audio', { method: 'POST', body: fd });
+        const res = await fetch('http://localhost:8001/detect-deepfake-audio', { method: 'POST', body: fd });
         const data = await res.json();
         setAudioResult(data); setAiResult(data);
       } catch (e) {
