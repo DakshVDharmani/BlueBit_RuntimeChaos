@@ -1,0 +1,34 @@
+# Virtual Environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Cache
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large model files (handle separately)
+*.pth
+*.pt
+*.h5
+*.pkl
+*.pickle
+
+# Environment variables
+.env
+.env.local
