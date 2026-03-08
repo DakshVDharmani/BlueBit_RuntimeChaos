@@ -157,7 +157,7 @@ The NLI model determines whether a claim **contradicts, entails, or is neutral**
 
 ### Confusion Matrix
 
-![NLI Confusion Matrix](snapshots/nli_confusion_matrix.png)
+![NLI Confusion Matrix](snapshots/nli_confusion_matrix.jpeg)
 
 **Interpretation**
 
@@ -206,7 +206,7 @@ The intent classifier identifies the **type of information contained in a claim*
 
 ### Accuracy Heatmap
 
-![Model Accuracy](snapshots/model_accuracy_heatmap.png)
+![Model Accuracy](snapshots/model_accuracy_heatmap.jpeg)
 
 This heatmap summarizes the performance of both models:
 
@@ -217,7 +217,7 @@ This heatmap summarizes the performance of both models:
 
 ### Training Progress
 
-![Training Progress](snapshots/training_progress.png)
+![Training Progress](snapshots/training_progress.jpeg)
 
 The visualization highlights the **training completion levels and model readiness**.
 
@@ -225,7 +225,7 @@ The visualization highlights the **training completion levels and model readines
 
 ### Dataset Distribution
 
-![Dataset Distribution](snapshots/performance_summary.png)
+![Dataset Distribution](snapshots/performance_summary.jpeg)
 
 The dataset includes:
 
