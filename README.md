@@ -21,23 +21,23 @@ This allows ChaosLens to identify not only **fake media**, but also **misleading
 ┌──────────────────────────────────────────────────────────────────────┐
 │                         CHAOSLENS CORE SYSTEM                        │
 ├──────────────────────────────────────────────────────────────────────┤
-│          🎭 DEEPFAKE DETECTION  |  📰 MISINFORMATION ANALYSIS       │
+│          🎭 DEEPFAKE DETECTION  |  📰 MISINFORMATION ANALYSIS         │
 │                                                                      │
 │  ┌──────────────────────────────┐   ┌──────────────────────────────┐ │
-│  │ 🎥 Video Analysis           │   │ 📝 Claim Extraction          │ │
-│  │ 🎵 Audio Deepfake Detection │   │ 🔍 Fact Verification         │ │
-│  │ 🖼️ Image Forensics          │   │ 📊 Source Credibility        │ │
-│  │ 💪 EMG Biometrics           │   │ ⏰ Temporal Validation       │ │
-│  │ 🧠 Face Mesh AI             │   │ 🎯 Entity Resolution         │ │
+│  │ 🎥 Video Analysis            │   │ 📝 Claim Extraction          │ │
+│  │ 🎵 Audio Deepfake Detection  │   │ 🔍 Fact Verification         │ │
+│  │ 🖼️ rPPG, Gaze Forensics      │   │ 📊 Source Credibility        │ │
+│  │ 💪 EMG Biometrics            │   │ ⏰ Temporal Validation       │ │
+│  │ 🧠 Face Mesh AI              │   │ 🎯 Entity Resolution         │ │
 │  └──────────────────────────────┘   └──────────────────────────────┘ │
 ├──────────────────────────────────────────────────────────────────────┤
-│                     🌐 BROWSER EXTENSION & FRONTEND                 │
+│                             🌐 FRONTEND                              │
 │                                                                      │
 │  ┌──────────────────────────────┐   ┌──────────────────────────────┐ │
-│  │ 📸 Live Tab Capture         │   │ 🎨 React + TypeScript UI     │ │
-│  │ ⚡ Real-time Scan           │   │ 🔥 Framer Motion Animations  │ │
-│  │ 📡 WebSocket Streaming      │   │ 📱 Firebase Backend          │ │
-│  │ 🛡️ Permission Management    │   │ 🎭 MediaPipe Vision          │ │
+│  │ 📸 Live Tab Capture          │   │ 🎨 React + TypeScript UI     │ │
+│  │ ⚡ Real-time Scan             |    │ 🔥 Framer Motion Animations │ │
+│  │ 📡 Chatbot                   │   │ 📱 Firebase Backend          │ │
+│  │ 🛡️ Settings Management       │   │ 🎭 MediaPipe Vision          │ │
 │  └──────────────────────────────┘   └──────────────────────────────┘ │
 └──────────────────────────────────────────────────────────────────────┘
 ```
@@ -66,8 +66,8 @@ It can detect:
 
 - Face mesh tracking
 - Audio spectral analysis
-- Image artifact detection
-- Biometric motion pattern analysis
+- Gaze and lip artifact detection
+- rPPG, muscular motion pattern analysis
 
 These techniques allow ChaosLens to identify **subtle anomalies produced by generative models**.
 
@@ -110,6 +110,8 @@ Users receive a **credibility score** along with an explanation of the analysis.
 
 - Python
 - PyTorch
+- HuggingFace
+- Facebook BART
 - MediaPipe
 - Deepfake detection models
 - Audio signal processing
@@ -126,12 +128,6 @@ Users receive a **credibility score** along with an explanation of the analysis.
 - Firebase
 - WebSockets
 - Cloud inference services
-
-## Browser Integration
-
-- Chrome Extension APIs
-- Live tab capture
-- Media streaming pipeline
 
 ---
 
@@ -249,9 +245,9 @@ Balanced evaluation ensures reliable benchmarking.
 - Test samples: **5,000**
 
 ### Key Achievements
-
-- Successfully trained **two different model architectures**
-- Achieved competitive accuracy on **fact verification datasets**
+- Successfully trained **two different models** for video and audio deepfake analysis
+- Trained **architectures** for misinformation analysis
+- Achieved competitive accuracy on **various datasets** (provided in this repository)
 - Models optimized for **real-time deployment**
 
 ---
