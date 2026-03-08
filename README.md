@@ -89,21 +89,6 @@ This allows ChaosLens to flag **misleading narratives**, not just manipulated me
 
 ---
 
-# Real-Time Browser Detection
-
-ChaosLens operates through a **browser extension**.
-
-When a user views a video, image, or article:
-
-1. The extension captures the media  
-2. Data is streamed to the ChaosLens detection engine  
-3. AI pipelines analyze the content in real time  
-4. Results are displayed instantly in the interface  
-
-Users receive a **credibility score** along with an explanation of the analysis.
-
----
-
 # Tech Stack
 
 ## AI / Detection
