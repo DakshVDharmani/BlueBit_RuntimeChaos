@@ -23,11 +23,11 @@ __pycache__/
 Thumbs.db
 
 # Large model files (handle separately)
-*.pth
-*.pt
-*.h5
-*.pkl
-*.pickle
+# *.pth
+# *.pt
+# *.h5
+# *.pkl
+# *.pickle
 
 # Environment variables
 .env
