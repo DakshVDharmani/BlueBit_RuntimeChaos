@@ -1,0 +1,6 @@
+{
+  "_name_or_path": "t5-small",
+  "trained_on_fever": true,
+  "num_samples": 50000,
+  "epochs": 3
+}
