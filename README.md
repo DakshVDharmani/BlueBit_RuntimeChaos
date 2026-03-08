@@ -1,170 +1,171 @@
-ChaosLens
-The Multi-Modal Engine for Detecting Deepfakes & Misinformation
+# ChaosLens
+## The Multi-Modal Engine for Detecting Deepfakes & Misinformation
 
-ChaosLens is a real-time AI system designed to detect synthetic media and misinformation across video, audio, images, and text.
+ChaosLens is a **real-time AI system** designed to detect **synthetic media and misinformation** across **video, audio, images, and text**.
 
-In a world where generative AI can fabricate voices, faces, and entire narratives, ChaosLens acts as a verification layer for the internet.
+In a world where generative AI can fabricate **voices, faces, and entire narratives**, ChaosLens acts as a **verification layer for the internet**.
 
-Instead of relying on a single detection model, ChaosLens combines multiple AI pipelines to analyze media authenticity, contextual claims, and source credibility.
+Instead of relying on a single detection model, ChaosLens combines **multiple AI pipelines** to analyze:
 
-The ChaosLens Architecture
-┌─────────────────────────────────────────────────────────────┐
-│                    ChaosLens CORE SYSTEM                    │
-├─────────────────────────────────────────────────────────────┤
-│  🎭 DEEPFAKE DETECTION      📰 MISINFORMATION ANALYSIS       │
-│  ┌─────────────────────┐   ┌─────────────────────────────┐ │
-│  │ 🎥 Video Analysis   │   │ 📝 Claim Extraction         │ │
-│  │ 🎵 Audio Deepfakes  │   │ 🔍 Fact Verification        │ │
-│  │ 🖼️ Image Forensics  │   │ 📊 Source Authority         │ │
-│  │ 💪 EMG Biometrics   │   │ ⏰ Temporal Validation      │ │
-│  │ 🧠 Face Mesh AI     │   │ 🎯 Entity Resolution        │ │
-│  └─────────────────────┘   └─────────────────────────────┘ │
-├─────────────────────────────────────────────────────────────┤
-│              🌐 BROWSER EXTENSION & FRONTEND               │
-│  ┌─────────────────────┐   ┌─────────────────────────────┐ │
-│  │ 📸 Live Tab Capture │   │ 🎨 React + TypeScript UI   │ │
-│  │ ⚡ Real-time Scan   │   │ 🔥 Framer Motion Animations │ │
-│  │ 📡 WebSocket Stream │   │ 📱 Firebase Backend        │ │
-│  │ 🛡️ Permission Mgmt │   │ 🎭 MediaPipe Vision         │ │
-│  └─────────────────────┘   └─────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────┘
-What ChaosLens Actually Does
+- Media authenticity  
+- Contextual claims  
+- Source credibility  
 
-ChaosLens monitors media directly from your browser and runs multiple detection pipelines in parallel.
+This allows ChaosLens to identify not only **fake media**, but also **misleading narratives**.
 
-Deepfake Detection
+---
 
-ChaosLens analyzes visual and audio inconsistencies using AI.
+# System Architecture
+
+```text
+┌──────────────────────────────────────────────────────────────────────┐
+│                         CHAOSLENS CORE SYSTEM                        │
+├──────────────────────────────────────────────────────────────────────┤
+│          🎭 DEEPFAKE DETECTION  |  📰 MISINFORMATION ANALYSIS       |
+│                                                                      │
+│  ┌──────────────────────────────┐   ┌──────────────────────────────┐ │
+│  │ 🎥 Video Analysis           │   │ 📝 Claim Extraction          │ │
+│  │ 🎵 Audio Deepfake Detection │   │ 🔍 Fact Verification         │ │
+│  │ 🖼️ Image Forensics          │   │ 📊 Source Credibility        │ │
+│  │ 💪 EMG Biometrics           │   │ ⏰ Temporal Validation       │ │
+│  │ 🧠 Face Mesh AI             │   │ 🎯 Entity Resolution         │ │
+│  └──────────────────────────────┘   └──────────────────────────────┘ │
+├──────────────────────────────────────────────────────────────────────┤
+│                     🌐 BROWSER EXTENSION & FRONTEND                 │
+│                                                                      │
+│  ┌──────────────────────────────┐   ┌──────────────────────────────┐ │
+│  │ 📸 Live Tab Capture         │   │ 🎨 React + TypeScript UI     │ │
+│  │ ⚡ Real-time Scan           │   │ 🔥 Framer Motion Animations  │ │
+│  │ 📡 WebSocket Streaming      │   │ 📱 Firebase Backend          │ │
+│  │ 🛡️ Permission Management    │   │ 🎭 MediaPipe Vision          │ │
+│  └──────────────────────────────┘   └──────────────────────────────┘ │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# What ChaosLens Does
+
+ChaosLens monitors media directly from the browser and runs **multiple detection pipelines simultaneously**, enabling **real-time verification of digital content**.
+
+---
+
+# Deepfake Detection
+
+ChaosLens analyzes **visual and audio inconsistencies** using AI models.
 
 It can detect:
 
-face-swap deepfakes
+- Face-swap deepfakes  
+- Synthetic voices  
+- AI-generated images  
+- Lip-sync mismatches  
+- Facial mesh distortions  
 
-synthetic voices
+### Detection Techniques
 
-AI-generated images
+- Face mesh tracking  
+- Audio spectral analysis  
+- Image artifact detection  
+- Biometric motion pattern analysis  
 
-lip-sync mismatches
+These techniques allow ChaosLens to identify **subtle anomalies produced by generative models**.
 
-facial mesh distortions
+---
 
-Key techniques include:
+# Misinformation Detection
 
-Face mesh tracking
+Beyond media analysis, ChaosLens also verifies **what the content is claiming**.
 
-Audio spectral analysis
+The system performs:
 
-Image artifact detection
+- Claim extraction from text or speech  
+- Fact verification using trusted knowledge sources  
+- Source credibility analysis  
+- Temporal validation (checking if information is outdated or misused)  
+- Entity resolution to identify referenced people, places, or organizations  
 
-Biometric motion patterns
+This allows ChaosLens to flag **misleading narratives**, not just manipulated media.
 
-Misinformation Detection
+---
 
-ChaosLens also checks what the content is claiming.
+# Real-Time Browser Detection
 
-It performs:
-
-Claim extraction from text or speech
-
-Fact verification using trusted knowledge sources
-
-Source credibility analysis
-
-Temporal validation (is the claim outdated or misused?)
-
-Entity resolution (who/what is actually being referenced)
-
-This allows ChaosLens to flag misleading narratives, not just fake media.
-
-Real-Time Browser Detection
-
-ChaosLens works through a browser extension.
+ChaosLens operates through a **browser extension**.
 
 When a user views a video, image, or article:
 
-The extension captures the media.
+1. The extension captures the media  
+2. Data is streamed to the ChaosLens detection engine  
+3. AI pipelines analyze the content in real time  
+4. Results are displayed instantly in the interface  
 
-The data is streamed to the ChaosLens engine.
+Users receive a **credibility score** along with an explanation of the analysis.
 
-Detection models analyze it in real time.
+---
 
-Results are displayed instantly in the UI.
+# Tech Stack
 
-Users get a credibility score and explanation for the result.
+## AI / Detection
 
-Tech Stack
-AI / Detection
+- Python  
+- PyTorch  
+- MediaPipe  
+- Deepfake detection models  
+- Audio signal processing  
+- NLP claim extraction  
 
-Python
+## Frontend
 
-PyTorch
+- React  
+- TypeScript  
+- Framer Motion  
 
-MediaPipe
+## Backend
 
-Deepfake detection models
+- Firebase  
+- WebSockets  
+- Cloud inference services  
 
-Audio signal processing
+## Browser Integration
 
-NLP claim extraction
+- Chrome Extension APIs  
+- Live tab capture  
+- Media streaming pipeline  
 
-Frontend
+---
 
-React
-
-TypeScript
-
-Framer Motion
-
-Backend
-
-Firebase
-
-WebSockets
-
-Cloud inference services
-
-Browser Integration
-
-Chrome Extension APIs
-
-Live tab capture
-
-Media streaming pipeline
-
-Why ChaosLens Matters
+# Why ChaosLens Matters
 
 Generative AI is evolving faster than verification systems.
 
 Deepfakes can:
 
-manipulate elections
+- Manipulate elections  
+- Trigger geopolitical panic  
+- Destroy reputations  
+- Spread viral misinformation  
 
-trigger geopolitical panic
+ChaosLens provides a **multi-layered defense system** by combining **media forensics and claim verification** into a single platform.
 
-destroy reputations
+---
 
-spread viral misinformation
+# Future Improvements
 
-ChaosLens provides a multi-layered defense by combining media forensics and claim verification in one system.
+Planned advancements include:
 
-Future Improvements
+- Cross-platform monitoring across social media  
+- Large-scale misinformation graph analysis  
+- Community verification signals  
+- Mobile detection support  
+- LLM-powered explanation engine  
 
-Next versions of ChaosLens will include:
+---
 
-Cross-platform monitoring (social media feeds)
+# Project Vision
 
-Large-scale misinformation graph analysis
+ChaosLens is built around one core belief:
 
-community verification signals
+> **Trust on the internet should be verifiable.**
 
-mobile detection support
-
-LLM-powered explanation engine
-
-Project Vision
-
-ChaosLens is built around one core idea:
-
-Trust on the internet should be verifiable.
-
-By combining deepfake detection + misinformation analysis, ChaosLens aims to become a real-time credibility layer for digital media.
+By combining **deepfake detection** and **misinformation analysis**, ChaosLens aims to become a **real-time credibility layer for digital media**.
