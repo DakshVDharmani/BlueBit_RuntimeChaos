@@ -35,7 +35,7 @@ This allows ChaosLens to identify not only **fake media**, but also **misleading
 │                                                                      │
 │  ┌──────────────────────────────┐   ┌──────────────────────────────┐ │
 │  │ 📸 Live Tab Capture          │   │ 🎨 React + TypeScript UI     │ │
-│  │ ⚡ Real-time Scan             |    │ 🔥 Framer Motion Animations │ │
+│  │ ⚡ Real-time Scan             |   │ 🔥 Framer Motion Animations  │ │
 │  │ 📡 Chatbot                   │   │ 📱 Firebase Backend          │ │
 │  │ 🛡️ Settings Management       │   │ 🎭 MediaPipe Vision          │ │
 │  └──────────────────────────────┘   └──────────────────────────────┘ │
