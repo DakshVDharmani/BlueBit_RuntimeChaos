@@ -188,7 +188,7 @@ The intent classifier identifies the **type of information contained in a claim*
 
 ### Confusion Matrix
 
-![Intent Confusion Matrix](snapshots/intent_confusion_matrix.png)
+![Intent Confusion Matrix](snapshots/intent_confusion_matrix.jpeg)
 
 **Interpretation**
 
